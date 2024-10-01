@@ -22,9 +22,9 @@ def slice(obj, slicing_parameter):
 	if stop > len(obj):
 		stop = len(obj)
 
-	return helper(obj, start, stop, step)
+	return solve(obj, start, stop, step)
 
-def helper(obj, start, stop, step):
+def solve(obj, start, stop, step):
 	ans = []
 	for i in range(start, stop, step):
 		ans.append(obj[i])
