@@ -47,12 +47,11 @@ def play_game(board):
 					print("This spot is already taken. Try again.")
 					continue
 		
-		if counter > (n+n):
-			winner = check_winner(board)
-			if winner is not None:
-				print_board(board)
-				print("Player {0} wins!".format('1' if winner == 'X' else '2'))
-				return 0
+		winner = check_winner(board)
+		if winner is not None:
+			print_board(board)
+			print("Player {0} wins!".format('1' if winner == 'X' else '2'))
+			return 0
 		
 
 	print_board(board)
